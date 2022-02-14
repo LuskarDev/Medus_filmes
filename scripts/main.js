@@ -29,3 +29,13 @@ Isearch.onclick = () => {
         Inputsearch.classList.toggle('showSearch');
         Isearch.classList.toggle('moveI');
 }
+
+
+const onload = document.querySelector('.on-load')
+
+
+window.addEventListener('load', () => {
+        setInterval(() => {
+                onload.style.display = "none";
+        },500)
+})
