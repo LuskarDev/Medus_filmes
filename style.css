@@ -343,7 +343,7 @@ background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
     left: 0px;
 }
 
-#home header nav ul li a:hover::before.lightB {
+#home header nav ul li a:hover::before{
     background-color: black;
 }
 
@@ -353,10 +353,6 @@ background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
     text-decoration: none;
     color: white;
     position: relative;
-}
-
-#home header nav ul li a.lightA {
-    color: black;
 }
 
 #home header nav ul li a:hover {
