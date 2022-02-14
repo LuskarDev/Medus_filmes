@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -116,7 +116,7 @@
     </section>
 
 
-    <footer>
+    <footer >
 
         <div class="footer-info">
             <div class="logo">
@@ -131,7 +131,7 @@
                     <i class="fa-brands fa-facebook"></i>
                 </div>
             </div>
-            <ul>
+            <ul class='lista'>
                 <h3 background="black" style="color: white">
                     SUPPORT
                 </h3>
@@ -164,7 +164,61 @@
    <!-- SCROLL REVEL -->
 <script src="https://unpkg.com/scrollreveal"></script>
 
+<script>
 
+var slideUp = {
+    distance: '150%',
+    origin: 'top',
+    duration: 600,
+    reset: true
+};
+
+var slideLeft = {
+    distance: '150%',
+    origin: 'left',
+    duration: 600,
+    reset: true
+};
+
+var slideRight = {
+    distance: '150%',
+    origin: 'right',
+    duration: 600,
+    reset: true
+};
+
+
+var slideBottom = {
+    distance: '150%',
+    origin: 'bottom',
+    duration: 600,
+    reset: true
+};
+
+ScrollReveal().reveal('.header', slideUp);
+
+ScrollReveal().reveal('.name', slideUp);
+
+ScrollReveal().reveal('.average', slideRight);
+
+ScrollReveal().reveal('.description', slideBottom);
+
+ScrollReveal().reveal('.D-movie', slideLeft);
+
+ScrollReveal().reveal('.L-movie', slideLeft);
+
+ScrollReveal().reveal('.logo', slideLeft);
+
+ScrollReveal().reveal('.lista', slideUp);
+
+ScrollReveal().reveal('.news-letter', slideUp);
+
+
+
+
+
+
+</script>
 
 </body>
 </html>
