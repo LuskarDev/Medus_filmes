@@ -5,6 +5,83 @@
     box-sizing: border-box;
 }
 
+.on-load {
+    width: 100%;
+    height: 100vh;
+    background-color: #2d3436;
+background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    position: absolute;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.on-load .img-load {
+    text-align: center;
+}
+
+
+.on-load .img-load h2 {
+    font-family: var(--font-roboto);
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1rem;
+
+}
+
+.on-load .img-load img {
+    width: 100px;
+}
+
+.on-load .img-load .bar {
+    width: 200px;
+    height: 15px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.89);
+    background: crimson ;
+    position: relative;
+}
+
+.on-load .img-load .bar::before{
+    position: absolute;
+    content: " ";
+    left: 0;
+    z-index: 1;
+    width: 30px;
+    height: 13px;
+    border-radius: 20px;
+    background: #2d3436;
+    animation: loading 2.5s infinite ease;
+}
+
+@keyframes loading {
+    0% { 
+        width: 0px;
+    }
+    10% {
+        width: 10px;
+
+    }
+    20%
+    {
+        width: 20px;
+    }
+    30% {
+        width: 40px;
+    }
+    50% {
+        width: 70px;
+    }
+
+    75% {
+        width: 100px;
+    }
+    100% {
+        width: 200px;
+    }
+}
+
 :root {
     --font-roboto: "Roboto", sans-serif;
     --font-poppins: "Poppins", sans-serif;
@@ -594,6 +671,11 @@ footer {
     justify-content: space-around;
 }
 
+footer .footer-info {
+    display: flex;
+    align-items: center;
+}
+
 footer ul h3 {
     font-family: var(--font-roboto);
     font-weight: 500;
@@ -656,7 +738,6 @@ footer .redes i{
         justify-content: center;
         text-align: center;
         display: flex;
-        background-size: contain;  
     }
 
     .m-info {
@@ -734,11 +815,39 @@ footer {
     flex-direction: column;
 }
 
+footer .footer-info {
+    display: flex;
+    align-items: center;
+}
+
+.news-letter {
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
 .news-letter h2{
+    margin-bottom: 10px;
     color: white;
     margin-left: 1rem;
     font-size: 1rem;
 }
 
+}
+
+
+@media (max-width: 438px) {
+    .D-movie {
+        width: 50%!important;
+        height: 50%!important;
+        margin: 0!important;
+        margin-top: 40px!important;
+        margin-left: 80px!important;
+    }
+
+
+.news-letter .i-news{
+    margin-left: 20px;
+
+}
 }
 
