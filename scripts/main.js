@@ -3,7 +3,6 @@ const genero = document.querySelector('.buttonGenero');
 const Tablegenero = document.querySelector('.generos');
 
 const icone = document.getElementById('icone');
-console.log(icone)
 
 genero.onclick = () => {
         Tablegenero.classList.toggle('showGeneros');
@@ -33,9 +32,26 @@ Isearch.onclick = () => {
 
 const onload = document.querySelector('.on-load')
 
-
 window.addEventListener('load', () => {
         setInterval(() => {
                 onload.style.display = "none";
-        },500)
+        },400)
 })
+
+
+const chk = document.getElementById('chk')
+
+const circle = document.querySelector(".circle")
+
+const headrow = document.getElementById("headrow")
+
+
+
+
+
+
+chk.onclick = () => {
+        
+        circle.classList.toggle('ative');
+        headrow.classList.toggle('light');
+}
