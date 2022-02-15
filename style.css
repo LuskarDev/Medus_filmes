@@ -893,11 +893,18 @@ footer .footer-info {
 
 @media (max-width: 438px) {
     .D-movie {
+        width: 250px;
+        height: 250px;
         display: flex;
         justify-content:center;
         align-items: center;
         margin: 0!important;
         margin-top: 40px!important;
+    }
+
+    #home main .m-info {
+        margin-top: 20px;
+        margin-left: 0px;
     }
 
     #home main .m-info .date {
@@ -908,7 +915,7 @@ footer .footer-info {
     }
 
     #home main .m-info p {
-        width: 90%;
+        width: 100%;
         margin: 1rem;
         margin-left: 0rem;
         padding: 0.5rem;
