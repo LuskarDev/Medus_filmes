@@ -45,7 +45,7 @@ fetch(requests.fetchTrending)
 
     row.className = 'L-movie';
 
-    row.classList.add('popularrow');
+    row.classList.add('Altarow');
 
     headrow.appendChild(row);
 
@@ -79,33 +79,13 @@ fetch(requests.fetchTrending)
 
 
 // title movie
-        const title_movie_E = document.createElement("h2")
+        const title_movie_E = document.createElement("h3")
 
-        title_movie_E.className = "title_movie_E"
+        title_movie_E.className = "title"
     
         title_movie_E.classList.add('titleMovieE')
 
         title_movie_E.innerText = movie.title;
-
-
-//average movie
-        const average_movie = document.createElement("span")
-
-        average_movie.className = "average"
-    
-        average_movie.classList.add('AverageMovie')
-
-        average_movie.innerText = movie.vote_average;
-
-
- //data movie
-        const data_movie = document.createElement("p")
-       
-        data_movie.className = "data"
-    
-        data_movie.classList.add('DataMovie')
-
-        data_movie.innerText = movie.first_air_date;
 
         const infos = document.createElement("div");
 
@@ -150,7 +130,7 @@ fetch(requests.fetchPopular)
 
     row.className = 'L-movie';
 
-    row.classList.add('ActionRow')
+    row.classList.add('PopularRow')
 
     headrow.appendChild(row);
 
@@ -184,25 +164,13 @@ fetch(requests.fetchPopular)
 
 
 // title movie
-        const title_movie = document.createElement("h2")
+        const title_movie = document.createElement("h3")
 
         title_movie.className = "title_movie_P"
     
         title_movie.classList.add('titleMovie_P')
 
         title_movie.innerText = movie.title;
-
-
-
-
- //data movie
-        const data_movie = document.createElement("p")
-       
-        data_movie.className = "data"
-    
-        data_movie.classList.add('DataMovie')
-
-        data_movie.innerText = movie.release_date;
 
         const infos = document.createElement("div");
 
@@ -268,7 +236,6 @@ fetch(requests.fetchActionMovies)
 
 
     data.results.forEach(movie => {
-
 // img movie
         const poster = document.createElement("img");
 
@@ -290,25 +257,6 @@ fetch(requests.fetchActionMovies)
 
         title_movie.innerText = movie.title;
 
-
-//average movie
-        const average_movie = document.createElement("span")
-
-        average_movie.className = "average"
-    
-        average_movie.classList.add('AverageMovie')
-
-        average_movie.innerText = movie.vote_average;
-
-
- //data movie
-        const data_movie = document.createElement("p")
-       
-        data_movie.className = "data"
-    
-        data_movie.classList.add('DataMovie')
-
-        data_movie.innerText = movie.release_date;
 
         const infos = document.createElement("div");
 
@@ -361,7 +309,7 @@ fetch(requests.fetchNetflixOriginals)
 
     title.className = 'title';
 
-    title.innerText = "Drama";
+    title.innerText = "Originais da netflix";
 
     row.appendChild(title);
 
@@ -387,7 +335,7 @@ fetch(requests.fetchNetflixOriginals)
 
 
 // title movie
-        const title_movie = document.createElement("h2")
+        const title_movie = document.createElement("h3")
 
         title_movie.className = "title_movie"
     
@@ -395,25 +343,6 @@ fetch(requests.fetchNetflixOriginals)
 
         title_movie.innerText = movie.name;
 
-
-//average movie
-        const average_movie = document.createElement("span")
-
-        average_movie.className = "average"
-    
-        average_movie.classList.add('AverageMovie')
-
-        average_movie.innerText = movie.vote_average;
-
-
- //data movie
-        const data_movie = document.createElement("p")
-       
-        data_movie.className = "data"
-    
-        data_movie.classList.add('DataMovie')
-
-        data_movie.innerText = movie.release_date;
 
         const infos = document.createElement("div");
 
