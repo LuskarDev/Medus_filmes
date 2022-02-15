@@ -873,7 +873,7 @@ footer .footer-info {
         position: fixed;
         top: 80px;
         right: 40px;
-        font-size: 1.9rem;
+        font-size: 2.2rem;
         color: black;
     
         display: block;
@@ -885,6 +885,7 @@ footer .footer-info {
         height: 100%!important;
         margin-left: 200px!important;
         margin-top: 40px!important;
+        margin-bottom: 0px!important;
     }
 
     #home main .m-info {
