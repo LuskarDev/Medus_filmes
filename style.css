@@ -881,12 +881,9 @@ footer .footer-info {
     }
 
     .D-movie {
-        width: 450px;
-        height: 450px;
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        margin: 0!important;
+        width: 100%!important;
+        height: 100%!important;
+        margin-left: 200px!important;
         margin-top: 40px!important;
     }
 
