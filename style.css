@@ -450,10 +450,11 @@ section {
 }
 
 #home main .m-info .date {
-    background: #f04c2bd0;
+    background: black;
     padding: 0.5rem;
     border-radius: 4px;
     width: 17%;
+    background-color: black;
 }
 
 #home main .m-info .p-title{
@@ -869,21 +870,28 @@ footer .footer-info {
 
 
 @media (max-width: 438px) {
+
+    #home .bg {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
     #home > i {
         position: fixed;
         top: 80px;
-        right: 40px;
+        right: 15px;
         font-size: 2.2rem;
         color: black;
-    
+        z-index: 1;
         display: block;
         cursor: pointer;
     }
 
     .D-movie {
-        width: 100%!important;
+        width: 200px!important;
         height: 100%!important;
-        margin-left: 200px!important;
+        margin-left: 100px!important;
         margin-top: 40px!important;
         margin-bottom: 0px!important;
     }
@@ -894,7 +902,7 @@ footer .footer-info {
     }
 
     #home main .m-info .date {
-        background: #f04c2bd0;
+        background: black;
         padding: 0.5rem;
         border-radius: 4px;
         width: 35%;
@@ -912,7 +920,6 @@ footer .footer-info {
     }
 
     #home #headrow .L-movie .title {
-        width: 100%;
         margin-top: 50px;
         margin-bottom:0;
         margin-left: 2rem;
