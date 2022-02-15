@@ -35,7 +35,7 @@ const onload = document.querySelector('.on-load')
 window.addEventListener('load', () => {
         setInterval(() => {
                 onload.style.display = "none";
-        },400)
+        },200)
 })
 
 
@@ -44,11 +44,6 @@ const chk = document.getElementById('chk')
 const circle = document.querySelector(".circle")
 
 const headrow = document.getElementById("headrow")
-
-
-
-
-
 
 chk.onclick = () => {
         
