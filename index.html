@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,6 +26,9 @@
 
     <section id="home">
 
+        <div class="menu">
+            <i class="fa-solid fa-bars-sort"></i>
+        </div>
 
         <div class="bg">
             <header class="header">
@@ -143,7 +146,7 @@
 
         <div class="news-letter">
 
-            <h2>Receba notificações de todos os sucessos <span><img src="images/sino.png" alt=""></span></h2>
+            <h2>Receba notificações de todos os sucessos <span><img src="images/sino.png" alt="sino"></span></h2>
     
             <div class="i-news">
                 <input placeholder="Digite seu E-mail" type="email" name="news-letter" id="news-letter" required>
@@ -169,30 +172,34 @@
 var slideUp = {
     distance: '150%',
     origin: 'top',
-    duration: 600,
-    reset: true
+    duration: 900,
+    reset: true,
+    easing: 'ease'
 };
 
 var slideLeft = {
     distance: '150%',
     origin: 'left',
-    duration: 600,
-    reset: true
+    duration: 900,
+    reset: true,
+    easing: 'ease'
 };
 
 var slideRight = {
     distance: '150%',
     origin: 'right',
-    duration: 600,
-    reset: true
+    duration: 900,
+    reset: true,
+    easing: 'ease'
 };
 
 
 var slideBottom = {
     distance: '150%',
     origin: 'bottom',
-    duration: 600,
-    reset: true
+    duration: 900,
+    reset: true,
+    easing: 'ease'
 };
 
 ScrollReveal().reveal('.header', slideUp);
@@ -212,11 +219,6 @@ ScrollReveal().reveal('.logo', slideLeft);
 ScrollReveal().reveal('.lista', slideUp);
 
 ScrollReveal().reveal('.news-letter', slideUp);
-
-
-
-
-
 
 </script>
 
