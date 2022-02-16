@@ -498,7 +498,7 @@ section {
 
 #home main .m-info .p-title h2{
     font-family: var(--font-roboto);
-    font-weight: 500;
+    font-weight: 00;
     font-size: 2rem;
     margin-right: 0.5rem;
     line-height: 1.0;
@@ -508,8 +508,8 @@ section {
 }
 
 #home main .m-info h3{
-    font-family: var(--font-roboto);
-    font-weight: 600;
+    font-family: var(--font-poppins);
+    font-weight: 300;
     font-size: 1rem;
     margin-bottom: 0.7rem;
 }
@@ -894,7 +894,7 @@ footer .footer-info {
     .D-movie {
         width: 200px!important;
         height: 300px!important;
-        margin-left: 30px!important;
+        margin-left: 10px!important;
         margin-top: 40px!important;
         margin-bottom: 0px!important;
     }
