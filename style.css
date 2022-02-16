@@ -886,6 +886,9 @@ footer .footer-info {
         z-index: 1;
         display: block;
         cursor: pointer;
+        padding: 0.4rem;
+        background: white;
+        border-radius: 50%;
     }
 
     .D-movie {
@@ -920,6 +923,7 @@ footer .footer-info {
     }
 
     #home #headrow .L-movie .title {
+        width: 70%;
         margin-top: 50px;
         margin-bottom:0;
         margin-left: 2rem;
