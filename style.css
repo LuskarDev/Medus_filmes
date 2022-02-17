@@ -871,6 +871,85 @@ footer .footer-info {
 
 @media (max-width: 438px) {
 
+    .menu-mobile {
+        position: absolute;
+        top: 70px;
+        left: 20px;
+        z-index: 1;
+        margin-left: 50px;
+        width: 280px;
+        height: 490px;
+        border-radius: 100px 20px 8px 8px;
+        background: #4F7A47;
+        transform: translateY(100%);
+        transform: translateX(20%);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .menu-mobile.showmenu-m {
+        transform: translateX(00%);
+        transition: transform .35s ease;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-mobile > img {
+        position: absolute;
+        width: 100%;
+        z-index: -0;
+        opacity: 0.1;
+    }
+
+    .menu-mobile ul li:nth-child(1){
+        margin-top: 0!important;
+        padding-top: 20px;
+    }
+
+    .menu-mobile ul {
+        position: absolute;
+        left: 30px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        
+    }
+
+    .menu-mobile ul li {
+        margin: 1rem;
+        list-style: none;
+        color: white;
+        font-family: var(--font-poppins);
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .menu-mobile ul .inpt-prfl .a-profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        margin-top: 10px;
+    }
+
+    .menu-mobile ul .inpt-prfl .a-profile button {
+        padding: 0.5rem;
+        width: 100px;
+        margin-top: 20px;
+        border: none;
+        color: white;
+        font-family: var(--font-roboto);
+        font-weight: 600;
+        border-radius: 4px;
+        background: black;
+    }
+
+    .menu-mobile ul .inpt-prfl .a-profile img {
+        width: 40px;
+    }
+
     #home .bg {
         background-size: cover;
         background-repeat: no-repeat;
@@ -880,16 +959,21 @@ footer .footer-info {
     #home > i {
         position: fixed;
         top: 80px;
-        right: 15px;
+        right: 70px;
         font-size: 2.2rem;
-        color: black;
+        color: white;
         z-index: 1;
         display: block;
         cursor: pointer;
         padding: 0.4rem;
-        background: white;
+        background: #4F7A47;
         border-radius: 50%;
     }
+
+    #home > i.sembg {
+        background: none;
+    }
+
 
     .D-movie {
         width: 200px!important;
