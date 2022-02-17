@@ -1,3 +1,5 @@
+/**generos */
+
 const genero = document.querySelector('.buttonGenero');
 
 const Tablegenero = document.querySelector('.generos');
@@ -10,6 +12,9 @@ genero.onclick = () => {
 }
 
 
+/**options login */
+
+
 const Ls = document.querySelector('.L-S')
 
 const user = document.querySelector('.a-profile img')
@@ -18,6 +23,8 @@ user.onclick = () => {
         Ls.classList.toggle('ShowL')
 }
 
+
+/** input animation */
 
 const Isearch = document.getElementById("Isearch");
 
@@ -29,7 +36,6 @@ Isearch.onclick = () => {
         Isearch.classList.toggle('moveI');
 }
 
-
 const onload = document.querySelector('.on-load')
 
 window.addEventListener('load', () => {
@@ -37,6 +43,8 @@ window.addEventListener('load', () => {
                 onload.style.display = "none";
         },200)
 })
+
+/** switcher theme */
 
 
 const chk = document.getElementById('chk')
@@ -49,4 +57,18 @@ chk.onclick = () => {
         
         circle.classList.toggle('ative');
         headrow.classList.toggle('light');
+}
+
+
+/** Menu mobile */
+
+
+const menu = document.querySelector('.menu-mobile');
+
+const activeMenu = document.getElementById('MenuActive');
+
+
+activeMenu.onclick = () => {
+        menu.classList.toggle('showmenu-m');
+        activeMenu.classList.toggle('sembg')
 }
