@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+.menu-mobile {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 00000000000;
+}
 
 
 .on-load {
@@ -881,8 +887,8 @@ footer .footer-info {
         height: 490px;
         border-radius: 100px 20px 8px 8px;
         background: #4F7A47;
-        transform: translateY(100%);
-        transform: translateX(20%);
+        transform: translateX(-20%);
+        transition: transform .35s ease;
         opacity: 0;
         visibility: hidden;
     }
@@ -891,6 +897,7 @@ footer .footer-info {
         transform: translateX(00%);
         transition: transform .35s ease;
         opacity: 1;
+        display: block;
         visibility: visible;
     }
 
@@ -959,7 +966,7 @@ footer .footer-info {
     #home > i {
         position: fixed;
         top: 80px;
-        right: 70px;
+        right: 25px;
         font-size: 2.2rem;
         color: white;
         z-index: 1;
