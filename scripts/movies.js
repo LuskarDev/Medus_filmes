@@ -23,7 +23,6 @@ fetch(requests.fetchPopular).then((res) => res.json()).then((data) => {
     var Dmovie_Title = document.querySelector('.name');
     var Dmovie_desc = document.querySelector('.description');
     var Dmovie_average = document.querySelector('.average');
-    var Dmovie_data = document.querySelector('.date');
     var Dmovie_m = document.querySelector('.bg');
 
 
@@ -31,7 +30,6 @@ fetch(requests.fetchPopular).then((res) => res.json()).then((data) => {
     Dmovie_Title.innerText = Randommovie.title;
     Dmovie_average.innerText = Randommovie.vote_average;
     Dmovie_desc.innerText = Randommovie.overview;
-    Dmovie_data.innerText = Randommovie.release_date;
     Dmovie_m.style.backgroundImage = "url(" + IMG_URL + Randommovie.backdrop_path + ")";
 })
 
@@ -170,7 +168,7 @@ fetch(requests.fetchPopular)
     
         title_movie.classList.add('titleMovie_P')
 
-        title_movie.innerText = movie.title;
+        title_movie.innerText = movie.title ;
 
         const infos = document.createElement("div");
 
