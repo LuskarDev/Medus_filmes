@@ -26,7 +26,7 @@ html {
     height: 100vh;
     background-color: #2d3436;
     position: absolute;
-    z-index: 11;
+    z-index: 11999999999999;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +40,7 @@ html {
 
 .on-load .img-load h2 {
     font-family: var(--font-roboto);
-    font-weight: 500;
+    font-weight: 700;
     color: white;
     margin-bottom: 1rem;
 
@@ -54,8 +54,8 @@ html {
     width: 200px;
     height: 12px;
     border-radius: 20px;
-    box-shadow: 0px 0px 6px 0px ;
-    background: #A1FB91 ;
+    box-shadow: 0px 0px 3px 0px white;
+    background: #6C7D82 ;
     position: relative;
 }
 
@@ -67,7 +67,7 @@ html {
     width: 30px;
     height: 12px;
     border-radius: 20px;
-    background: #4F7A47;
+    background: #2A474F;
     animation: loading 2.5s infinite ease;
 }
 
@@ -451,7 +451,7 @@ section {
 }
 
 #home main .D-movie:hover{
-    transform: scale(1.2);
+    transform: scale(1.4);
     transition: .35s ease;
 }
 
@@ -464,23 +464,22 @@ section {
     justify-content: flex-start;
 }
 
-#home main .m-info .date {
-    background: black;
-    padding: 0.5rem;
-    border-radius: 4px;
-    width: 17%;
-    background-color: black;
-}
 
 #home main .m-info .p-title{
     display: flex;
     margin-bottom: 1rem;
 }
 
-#home main .m-info .p-title span {
+#home main .m-info .ave-date {
+    display: flex;
+}
+
+#home main .m-info span {
+    width: 50px;
     background: #3f0d12;
     padding: 0.5rem;
     font-size: 1.3rem;
+    border: 1px solid rgba(255, 255, 255, 0.493);
     border-radius: 4px;
     box-shadow: 0px 0px 8px 0px rgba(15, 15, 15, 0.863);
     font-family: var(--font-roboto);
@@ -520,13 +519,6 @@ section {
     background-color: black;
     padding: 0.3rem;
     border-radius: 4px;
-}
-
-#home main .m-info h3{
-    font-family: var(--font-poppins);
-    font-weight: 300;
-    font-size: 1rem;
-    margin-bottom: 0.7rem;
 }
 
 
@@ -899,7 +891,28 @@ footer .footer-info {
         visibility: hidden;
         z-index: 111111111; 
         position: fixed;
+    }
 
+    .menu-mobile .svg .circle {
+        background: #6C7D82;
+        width: 280px;
+        height: 250px;
+        border-radius: 80% 0% 0% 100%;
+        position: absolute;
+        top: -9px;
+        left: 0px;
+        z-index: 1;
+    }
+
+    .menu-mobile .svg .square {
+        background: #6C7D82;
+        width: 250px;
+        height: 250px;
+        border-radius: 0% 0% 40% 700%;
+        position: absolute;
+        left: 50px;
+        top: 180px;
+        z-index: 1;
     }
 
     .menu-mobile.showmenu-m {
@@ -994,7 +1007,7 @@ footer .footer-info {
         position: fixed;
         top: 80px;
         left: 300px;
-        z-index: 1;
+        z-index: 999999999;
         font-size: 2.2rem;
         color: white;
         background: #2A474F;
