@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .menu-mobile {
     position: absolute;
     opacity: 0;
@@ -69,7 +73,8 @@
     right: 20px;
     font-size: 1.8rem;
     color: white;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
 }
 
 @keyframes loading {
@@ -122,7 +127,7 @@ section {
 #home header {
     display: flex;
     height: 14vh;
-    background-color: #4F7A47;
+    background-color: #2A474F;
 
 }
 
@@ -878,35 +883,28 @@ footer .footer-info {
 @media (max-width: 438px) {
 
     .menu-mobile {
-        position: absolute;
-        top: 70px;
-        left: 20px;
-        z-index: 1;
-        margin-left: 50px;
+        z-index: 999;
+        left: 80px;
         width: 280px;
-        height: 490px;
-        border-radius: 100px 20px 8px 8px;
-        background: #4F7A47;
-        transform: translateX(-20%);
+        height: 650px;
+        border-radius: 100px 0px 8px 8px;
+        background: #2A474F;
+        transform: translateX(40%);
         transition: transform .35s ease;
         opacity: 0;
         visibility: hidden;
+        z-index: 111111111; 
+        position: fixed;
+
     }
 
     .menu-mobile.showmenu-m {
         transform: translateX(00%);
         transition: transform .35s ease;
         opacity: 1;
-        display: block;
         visibility: visible;
     }
 
-    .menu-mobile > img {
-        position: absolute;
-        width: 100%;
-        z-index: -0;
-        opacity: 0.1;
-    }
 
     .menu-mobile ul li:nth-child(1){
         margin-top: 0!important;
@@ -931,6 +929,31 @@ footer .footer-info {
         font-family: var(--font-poppins);
         font-weight: 600;
         cursor: pointer;
+    }
+
+    .menu-mobile ul li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu-mobile ul .inpt-prfl .inpt-src {
+        position: relative;
+        margin-top: 40px;
+    }
+
+
+    .menu-mobile ul .inpt-prfl .inpt-src input {
+        padding:0.4rem;
+        padding-left: 1.6rem;
+        outline: none;
+    }
+
+
+
+    .menu-mobile ul .inpt-prfl .inpt-src i {
+        position: absolute;
+        top: 10px;
+        left: 10px;
     }
 
     .menu-mobile ul .inpt-prfl .a-profile {
@@ -963,24 +986,19 @@ footer .footer-info {
         background-position: center;
     }
 
-    #home > i {
+    #MenuActive {
         position: fixed;
         top: 80px;
-        right: 25px;
+        left: 300px;
+        z-index: 1111111111111;
         font-size: 2.2rem;
         color: white;
-        z-index: 1;
-        display: block;
-        cursor: pointer;
-        padding: 0.4rem;
-        background: #4F7A47;
+        background: #2A474F;
         border-radius: 50%;
+        padding: 0.4rem;
     }
 
-    #home > i.sembg {
-        background: none;
-    }
-
+    
 
     .D-movie {
         width: 200px!important;
