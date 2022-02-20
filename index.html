@@ -24,6 +24,8 @@
 
     </div>
 
+    <a href="#home"><i id="arrow-up" class="fa-solid fa-circle-chevron-up"></i></a>
+
     <i id="MenuActive" class="fa-solid fa-bars-staggered"></i>
 
     <section id="home">
@@ -32,21 +34,21 @@
         <div class="center-m">
             <div class="menu-mobile">
                 <div class="svg">
-                    <div class="circle"></div>
+                    <div class="circlez"></div>
                     <div class="square"></div>
                 </div>
                 <ul>
                     <li><a href="#home">Inicio</a></li>
-                    <li>Séries</li>
-                    <li>Lista de Filmes</li>
-                    <li>Generos</li>
+                    <li><a href="">Séries</a></li>
+                    <li><a href="">Lista de Filmes</a></li>
+                    <li><a href="">Generos</a></li>
                     <div class="inpt-prfl">
                         <div class="inpt-src">
-                            <input class="search" placeholder="Procure seu filme aqui" type="search" name="search" id="search">
-                            <i id="Isearch" class="fa-solid fa-magnifying-glass"></i>
+                            <input placeholder="Procure seu filme aqui" type="search" name="search1" id="search1">
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div class="a-profile">
-                            <div class="L-S">
+                            <div class="L-S1">
                                 <button>
                                     Login
                                 </button>
@@ -67,14 +69,14 @@
             <header class="header">
                 <div class="logo">
                     <img src="images/—Pngtree—medusa head retro_6916297.png" alt="logo">
-                    <p>Medusa Filmes</p>
+                    <p class="logoP">Medusa Filmes</p>
                 </div>
                 <nav>
             
                     <ul>
-                        <li><a href="#home">Inicio</a></li>
+                        <li><a class="Alight" href="#home">Inicio</a></li>
                         <li>
-                            <a class="buttonGenero" href="#">Gêneros 
+                            <a class="buttonGenero Alight" href="#">Gêneros 
                                 <span>
                                     <i id="icone" class="fa-solid fa-angle-right"></i>
                                 </span>
@@ -97,15 +99,15 @@
                                 </table>
                             </div>
                         </li>
-                        <li><a href="">Séries</a></li>
-                        <li><a href="">Lista de filmes</a></li>
+                        <li><a class="Alight"  href="">Séries</a></li>
+                        <li><a class="Alight"  href="">Lista de filmes</a></li>
                     </ul>
 
                     <div class="user">
 
                         <div class="inpt-src">
                             <input class="search" type="search" name="search" id="search">
-                            <i id="Isearch" class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-magnifying-glass Isearch"></i>
                         </div>
 
                         <div class="a-profile">
@@ -114,6 +116,7 @@
                                 <button>
                                     Login
                                 </button>
+
                                 <button>
                                     Sing Up
                                 </button>
@@ -122,7 +125,7 @@
 
                         <div class="switcher-themer">
                              <div class="circle"></div>
-                            <input type="checkbox" name="check" id="chk">
+                            <input onclick="switcherTheme()" type="checkbox" name="check" id="chk">
                             <i class="fa-solid fa-moon"></i>
                             <i class="fa-solid fa-sun"></i>
                         </div>
@@ -132,7 +135,7 @@
             <main >
                 <div class="D-movie">
                 </div>
-                <div  class="m-info">
+                <div class="m-info">
                     
                     <div class="p-title">
                         <h2 class="name">filme</h2> 
@@ -256,6 +259,7 @@ ScrollReveal().reveal('.logo', slideLeft);
 ScrollReveal().reveal('.lista', slideUp);
 
 ScrollReveal().reveal('.news-letter', slideUp);
+
 
 </script>
 
